@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorkshire des Villardières - Élevage de Yorkshire Terrier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo">
+            <img src="medias_site/LOGO_YORKSHIRE_BLANC.png" alt="Logo Yorkshire des Villardières">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#elevage">L'élevage</a></li>
+                <li><a href="#adoption">Adoption</a></li>
+                <li><a href="#toilettage">Toilettage</a></li>
+                <li><a href="#contact">Contact York</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="welcome_text">Bienvenue <br> aux Villardières,<br> l'élevage <br> de Yorkshires</h1>
+        </section>
+
+        <section class="intro">
+            <h2>Le Yorkshire Terrier, un amour de chien</h2>
+            <p>Le <b>Yorkshire Terrier</b> est un chien de petite taille mais grand par son cœur. Son pelage long et soyeux de couleur bleue, grise et feu, lui donne une allure unique.</p>
+            <p class="intro2">Si vous êtes en amour pour ses petites boules de poils que sont les Yorkshires,<br> alors vous êtes au bon endroit !</p>
+        </section>
+
+        <section class="about-owner">
+           <div class="owner-image">
+                 <img src="medias_site/francoise-vieillard-eleveuse-yorkshire.jpg" alt="owner image">
+             </div>
+            <div class="owner-text">
+                <h2>La maîtresse des Villardières</h2>
+               <br> <p>Je m’appelle <b>Françoise Vieillard</b> et je suis avant tout une passionnée !<br> Cela fait maintenant 20 ans que je me consacre à ces petites bêtes. J’ai à cœur d’élever mes chiens dans un <b>cadre de vie familial</b> et <b>sécurisant</b>.</p>
+               <br> <p>Ma maison, en Franche-Comté, est située en pleine campagne où les arbres et les fleurs foisonnent, offrant un vrai <b>havre de paix</b> pour le bon développement des <b>Yorkshires</b>. Ils grandissent ici dans le bonheur !</p>
+               <br> <p>Je serais ravie de vous faire découvrir mon élevage et qui sait peut-être, <b>votre futur compagnon</b> ?</p>
+              <br><button class="cta-button"><a href="#contact" >Contactez-moi</a></button>
+            </div>
+            
+            
+        </section>
+
+        <section>
+            <div class="york-"></div>
+        </section>
+
+        <section class="quote">
+            <p>Les Yorkshires des Villardières sont issus des plus prestigieuses lignées de champions internationaux de beauté</p>
+        </section>
+
+        <section class="links-grid">
+            <div class="link-card">
+                <img src="./medias_site/elevage-chiot-yorkshire.jpg" alt="elevage"/>
+                <h3>L'élevage des Villardières</h3>
+                <p>Découvrez les lieux et l'univers des Villardières</p>
+                <button class="btn"><a href="#">L'élevage</a></button>
+            </div>
+           
+            <div class="link-card">
+                <img src="./medias_site/adoption-chiot-yorkshire.jpg" alt="adoption"/>
+                <h3>Adoption</h3>
+                <p>Faites la rencontre de votre futur compagnon</p>
+               <button class="btn"> <a href="#">Adopter un chiot</a></button>
+            </div>
+            <div class="link-card">
+                <img src="./medias_site/toilettage-chien-yorkshire-terrier.jpg" alt="toilettage"/>
+                <h3>Soin et entretien</h3>
+                <p>L'hygiène de votre Yorkshire, comment faire ?</p>
+                <button class="btn"><a href="#">Le toilettage</a></button>
+            </div>
+        </section>
+    </main>
+  <div class="bel"> </div>
+
+    <footer id="contact">
+        
+        <div class="footer-contact">
+            <p>03 84 74 31 22</p>
+            <p>06 82 41 39 58</p>
+            <p>adoptionyorkshire@villardieres.fr</p>
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="img_f">
+            <!-- Remplacer par votre logo vertical -->
+            <img src="medias_site/logo-yorkshire-blanc-vertical.png" alt="Logo Yorkshire des Villardières">
+        </div>
+        <div class="footer-social">
+            <p>Suivez-nous !</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+<script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

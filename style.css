@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Définition des variables de couleurs et de polices */
+:root {
+    --primary-color: #4d3566; /* Violet foncé */
+    --secondary-color: #916fae; /* Violet moyen */
+    --light-bg-color: #ece7f1; /* Violet clair/gris */
+    --accent-color: #b17f4a; /* Marron/or */
+    --text-color: #383838; /* Gris foncé */
+
+    /* Typos */
+    --font-title: 'Caveat', cursive;
+    --font-text: 'Montserrat', sans-serif;
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+/* Styles de base */
+body {
+    font-family: var(--font-text);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* ou var(--light-bg-color) pour un fond léger */
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 0 5%; /* Ajoute un peu d'espace sur les côtés */
+    height: 12vh;
+    flex-wrap: wrap;
+}
+/* Logo Styles */
+.logo img {
+    display: flex;
+    height: 55px; /* Ajustez la taille selon votre logo */
+   padding: 5px 250px 5px 5px;
+
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 12px 0px 0px 160px; /* Réinitialise la marge par défaut de la liste */
+    padding: 2px 2px; /* Réinitialise le padding par défaut de la liste */
+}
+
+nav ul li {
+    margin-left: 40px; /* Espace entre les liens */
+    position: sticky;
+    top: 0;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0px;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./medias_site/chien-yorkshire-course-herbe.jpg');
+    background-position: center;
+    height: 62vh;/*50%de la hauteur de la vue */
+    display: flex;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center;
+    padding-left: 10%; /* Ajoute une marge à gauche */
+}
+
+.hero h1 {
+    color: white;
+    font-size: 4.5em; /* Taille du texte */
+    line-height: 1.2; /* Espace entre les lignes */
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+}
+.intro {
+    background-image: linear-gradient(url'medias_site/FOND_OS.jpg');
+    height: 40vh;
+    padding: 6px;
+    text-align: center;
+    background-size: cover;
+}
+.cta-button {
+    background-color: #b17b41;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 2px;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 8px;
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.york- {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(
+        'medias_site/chien-yorkshire-herbe.jpg');
+    background-position: center;
+    height: 25vh;
+    display: flex;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center;
+    padding-left: 10%; /* Ajoute une marge à gauche */
+    margin: 0px 0px 0px 0px;
+}
+
+.quote {
+    background-image: linear-gradient(rgb(140, 102, 33), rgba(203, 138, 15, 0.7)), url('medias_site/FOND_OS.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.quote p {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: var(--font-title);
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.intro p {
+    font-size: 1.2em;
+    line-height: 2;
+    color: var(--text-color);
+    background-color: ;
+   
+}.intro2 {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+.about-owner {
+    background-color: var(--light-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 20px; /* Espace entre l'image et le texte */
+    margin-left: 0px;
+    width: 800;
+    height: 400px;
+    padding: 20px 5%; /* Ajoute un peu d'espace sur les côtés */
+}
+.owner-image {
+    display: flex;
+    height: 300px;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 220px 0px;
+}
+.owner-image img {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 120px 0px 0px 0px;
+}
+
+.owner-text {
+    width: 350px; /* Augmentation de la largeur pour un meilleur affichage */
+    font-size: 0.7em;
+    margin: 140px 0px 420px 0px;
+    }
+
+.owner-text h2 {
+    text-align: left;
+    margin: 200px 0px 4px 0px;
+}
+
+.btn{
+    background-color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    justify-items: space-between;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Ajout d'un écart entre les cartes */
+    margin: 100px 50px; /* Ajustement des marges */
+    
+}
+.link-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8em;
+    align-items: center;
+    text-align: center; /* Centrer le texte dans la carte */
+    align-items: center;
+}
+
+.link-card img {
+    width: 140px;        /* réduction de la dimension */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;  /* rendu circulaire */
+    border: 7px solid var(--primary-color);
+}
+.bel{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(
+        'medias_site/chien-yorkshire-terrier-jardin.jpg');
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center;
+    padding-left: 10%; /* Ajoute une marge à gauche */
+    margin: 0px 0px;
+}
+#contact {
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-contact, .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.img_f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_f img {
+    max-height: 150px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
